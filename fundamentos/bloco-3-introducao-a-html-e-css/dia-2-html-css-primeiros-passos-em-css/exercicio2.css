@@ -1,0 +1,40 @@
+body{
+    font-size: 16px;
+}
+
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+
+}
+
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+
+ul{
+    line-height: 30px;
+    text-align: center;
+    text-decoration: blue underline;
+}
+
+#amarelo{
+    background-color: yellow;
+}
+
+#vermelho{
+    background-color: red;
+}
+
+#marrom{
+    background-color: maroon;
+}
+
+
+.modifi{
+    background-color: peru;
+    font-style: italic;
+    color: green;
+}
