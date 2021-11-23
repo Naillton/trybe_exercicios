@@ -1,0 +1,36 @@
+div:hover{
+    border: 1px solid black;
+
+}
+
+.div1{
+    background-color: chocolate;
+}
+
+.div2{
+    background-color: rgb(16, 197, 16);
+}
+
+.div3{
+    background-color: blue;
+    height: 200px;
+}
+
+.div4{
+    background-color: palevioletred;
+}
+
+.div5{
+    background-color: violet;
+}
+
+h3{
+    font-family: monospace;
+    font-weight: 100;
+    text-align: center;
+}
+
+div:nth-child(odd){
+
+    font-style:italic ;
+}

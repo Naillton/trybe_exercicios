@@ -1,0 +1,62 @@
+ol li{
+    background-color: yellow;
+}
+
+ol li:nth-child(even){
+    color: darkgreen;
+}
+
+ol li:nth-child(odd){
+    text-transform: uppercase;
+}
+
+.format{
+    color: red;
+}
+
+.format em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
+.programming li:nth-child(n+1):nth-child(-n+3){
+
+    color: blue;
+}
+
+.programming li:nth-of-type(2){
+    background-color: pink;
+}
+
+a:hover{
+    font-weight: 700;
+}
+
+#orange{
+    color: orange;
+}
+
+#green{
+    color: green;
+}
+
+#preta{
+    color: black;
+}
+
+#amarela{
+    color: yellow;
+}
+
+#verde{
+
+    color: greenyellow;
+}

@@ -1,0 +1,18 @@
+h1, p{
+
+    text-align: center;
+}
+
+li:hover{
+
+    background: chartreuse;
+}
+
+li:active{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+li{
+    list-style: none;
+}
