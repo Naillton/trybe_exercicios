@@ -1,0 +1,84 @@
+body{
+    background-color: aquamarine;
+    font-size: 20px;
+    font-family: monospace;
+    margin: 0px 0px;
+}
+
+/* topo */
+.topo{
+    border: 1px solid rgb(85, 85, 187);
+    background-color: rgb(85, 85, 187);
+    text-align: center;
+    font-family: serif;
+}
+
+.secao-topo h1{
+    font-size: larger;
+    font-style: italic;
+    text-transform: capitalize;
+}
+.secao-topo a{
+    text-decoration: none;
+    color: cornsilk;
+    padding: 3px;
+}
+
+.secao-topo a:active{
+    color: black;
+}
+
+/* fim topo */
+
+/* principal */
+
+.conteudo1{
+    text-align: center;
+}
+
+.conteudo2{
+    margin: 20px;
+}
+.conteudo2 ul{
+    list-style: none;
+}
+
+.conteudo3 h2{
+    text-align: center;
+}
+
+.conteudo3 figure{
+    display: inline-block;
+}
+
+.conteudo3 p{
+    width: 800px;
+    text-align: justify;
+    display: inline-block;
+}
+
+.conteudo4{
+
+    margin: 20px;
+    text-align: justify;
+}
+
+.conteudo5{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conteudo5 a{
+    text-decoration: none;
+}
+
+/* fim principal */
+
+/* rodape */
+
+.rodape{
+    margin-top: 20px;
+    border: 1px solid rgb(85, 85, 187);
+    text-align: center;
+    background-color: rgb(85, 85, 187);
+}
