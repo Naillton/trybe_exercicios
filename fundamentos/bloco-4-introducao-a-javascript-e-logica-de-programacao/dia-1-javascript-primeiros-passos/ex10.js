@@ -1,4 +1,4 @@
-let salario = 3000;
+let salario = 5000;
 
 let aliquota;
 let valor_Salario;
