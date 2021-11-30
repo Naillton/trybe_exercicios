@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "http://console.log(max);",
+            "request": "launch",
+            "url": "http://console.log(max);"
+        }
+    ]
+}
