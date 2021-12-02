@@ -68,3 +68,16 @@ console.log(arrayFunc([2, 4, 6, 7, 10, 0, -3])) */
     return list
 }
 console.log(arrayFunc([2, 4, 6, 7, 10, 0, -3])) */
+
+function nomes(array){
+    let list = array[0]
+    for(let i = 0; i < array.length; i++){
+        if(array[i] > list){
+            list = array[i]
+        }
+    }
+
+    return list
+}
+
+console.log(nomes(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
