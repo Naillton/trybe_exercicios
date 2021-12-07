@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let h1 = document.createElement('h1')
+        document.body.appendChild(h1);
+
+        let main = document.createElement('main')
+        main.className = 'main-content';
+        document.body.appendChild(main);
+
+        //adcionando tag a filhas especificas
+        let section = document.createElement('section')
+        section.className = 'center-content';
+        document.querySelector(".main-content").appendChild(section);
+
+        //adcionando paragrafo a section
+        let p = document.createElement('p')
+        p.innerText = "Texto do paragrafo"
+        document.querySelector(".center-content").appendChild(p)
+
+        //adicionando mais uma section a main
+        let section2 = document.createElement('section')
+        section.className = "left-content"
+        document.querySelector('.main-content').appendChild(section2)
+
+        //adcionando section a direita
+        let sectionR = document.createElement('section')
+        sectionR.className = 'right-content';
+        document.querySelector(".main-content").appendChild(sectionR)
+
+        //adcionando imagem a section esquerda
+        let img = document.createElement('img')
+        img.src = "https://picsum.photos/200"
+        img.className = "small-image";
+        document.querySelector('.left-content').appendChild(img)
+
+        //adcionando listas
+        let unordered = document.createElement('ul')
+        unordered.className = 'list';
+        document.querySelector('.right-content').appendChild(unordered)
+        let itens = ["um", "dois", "tres", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"]
+        for(let i = 0; i < itens.length; i += 1){
+            
+            let element = itens[i]
+
+            let list = document.createElement('li')
+            list.innerText = element
+            document.querySelector(".list").appendChild(list)
+        }
+
+        //adcionando tags
+            let h3First = document.createElement('h3')
+            let h3Second = document.createElement('h3')
+            let h3Third = document.createElement('h3')
+            document.querySelector(".main-content").appendChild(h3First)
+            document.querySelector(".main-content").appendChild(h3Second)
+            document.querySelector(".main-content").appendChild(h3Third)
+        
+        //adcionando classe na tag h1
+        h1.className = 'title'
+
+        //adcionando classe a tags h3
+        h3First.className = 'description'
+        h3Second.className = 'escription'
+        h3Third.className = 'description'
+
+        //removendo section a esquerda
+        let excluirLeft = document.querySelector('.left-content')
+        if(excluirLeft.parentNode){
+            excluirLeft.parentNode.removeChild(excluirLeft)
+        }
+        
+        //centralizando tage section right
+        sectionR.style.marginRight = "auto"
+
+        //mudando cor da section pai
+        main.style.backgroundColor = "green"
+
+        //removendo elemento da lista
+        let list = document.getElementsByTagName("li")        
+        for(let item of list){
+            let element = item
+            if(element.innerText.includes("dez")){
+                item.remove(element)
+            }
+            for(let ok of list){
+                let el = ok
+                if(el.innerText.includes("nove")){
+                    ok.remove(el)
+                }
+            }       
+        }
+    </script>
+  </body>
+</html>
