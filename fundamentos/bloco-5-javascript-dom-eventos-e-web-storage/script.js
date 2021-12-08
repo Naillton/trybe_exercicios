@@ -90,11 +90,20 @@ function createDaysOfTheWeek() {
         sext.innerText = "SEXTOU!!"
       }
     });
-
+     //adcionando evento de click ao botao
     btnS.addEventListener("dblclick", function(){
       for(let sexta of sextou){
         sexta.innerText = "sexta"
       }
     });
+
+    let unordered = document.querySelector("#days")
+    unordered.addEventListener("mouseover", function(event){
+      event.target.style.fontSize = '30px'
+    });
+    
+    unordered.addEventListener("mouseout", function(event){
+        event.target.style.fontSize = '20px';
+    }); 
     
     
