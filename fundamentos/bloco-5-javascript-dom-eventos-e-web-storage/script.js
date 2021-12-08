@@ -77,4 +77,24 @@ function createDaysOfTheWeek() {
       }
     });
 
+    //adcionando botao sexta-feira
+    let btnS = document.createElement('button')
+    btnS.innerText = "Sexta-Feira"
+    btnS.id = "sextou"
+    botao.appendChild(btnS)
+
+    //adcionando evento de click ao botao
+    let sextou = document.querySelectorAll('.friday')
+    btnS.addEventListener("click", function(){
+      for(let sext of sextou){
+        sext.innerText = "SEXTOU!!"
+      }
+    });
+
+    btnS.addEventListener("dblclick", function(){
+      for(let sexta of sextou){
+        sexta.innerText = "sexta"
+      }
+    });
+    
     
