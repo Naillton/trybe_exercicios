@@ -55,12 +55,26 @@ function createDaysOfTheWeek() {
       }
     }
 
-    //
-    function ex2(Feriados){
+    //adcionando botao Feriados
       let btn = document.createElement('button')
       btn.innerText = "Feriados"
       btn.id = "btn-holiday"
       let botao = document.querySelector('.buttons-container')
       botao.appendChild(btn)
-    }
+      let button = document.querySelector('#btn-holiday')
 
+    //adcionando eventos a o botao feriados
+    let color = document.querySelectorAll('.holiday')
+    btn.addEventListener("click", function(){
+      for(let cor of color){
+        cor.style.backgroundColor = 'green';
+      }
+    });
+    //adcionando evento para voltar a cor padrao
+    btn.addEventListener("dblclick", function(){
+      for(let corF of color){
+        corF.style.backgroundColor = 'rgb(238,238,238)';
+      }
+    });
+
+    
