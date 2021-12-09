@@ -106,4 +106,20 @@ function createDaysOfTheWeek() {
         event.target.style.fontSize = '20px';
     }); 
     
+    function ex7(span){
+      span = document.createElement('span')
+      span.innerText = 'Trybe'
+      let classe = document.querySelector(".my-tasks")
+      classe.appendChild(span)
+      legend();
+    }
+
+    function legend(cor){
+      cor = document.createElement('div')
+      cor.className = 'task'
+      cor.style.backgroundColor = 'green'
+      let pai = document.querySelector(".my-tasks")
+      pai.appendChild(cor) 
+    }
+
     
