@@ -103,7 +103,7 @@ function createDaysOfTheWeek() {
     });
     
     unordered.addEventListener("mouseout", function(event){
-        event.target.style.fontSize = '20px';
+      event.target.style.fontSize = '20px';
     }); 
     
     function ex7(span){
@@ -122,4 +122,23 @@ function createDaysOfTheWeek() {
       pai.appendChild(cor) 
     }
 
+    let selecionado = document.querySelector(".my-tasks")
+    selecionado.addEventListener("click", function(){
+        let task = document.querySelector(".my-tasks")
+        task.classList.add("task", "selected")
+    });
+
+    let selecionadoDois = document.querySelector(".my-tasks")
+    selecionadoDois.addEventListener("dblclick", function(){
+        let task = document.querySelector(".my-tasks")
+        task.classList.remove("selected")
+    });
+
+    unordered.addEventListener("click", function(event){
+      event.target.style.color = 'green'
+    });
+
+    unordered.addEventListener("dblclick", function(event){
+      event.target.style.color = 'rgb(119,119,119)'
+    });
     
