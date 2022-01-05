@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario</h1>
+    </header>
+    <main>
+        <form action="requisicao.html" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Formulario curriculo</legend>
+                <div class="camp">
+                    <label for="texto">
+                        Nome:
+                        <input type="text" name="texto" id="texto" maxlength="40" required>
+                    </label>
+                </div>
+                <div class="camp">
+                    <label for="email">
+                        E-mail:
+                        <input type="email" name="email" id="email" maxlength="50" required>
+                    </label>
+                </div>
+                <div class="camp">
+                    <label for="cpf">
+                        CPF:
+                        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+                    </label>
+                </div>
+                <div class="camp">
+                    <label for="endereco">
+                        Endereco:
+                        <input type="text" name="endereco" id="endereco" maxlength="200" required>
+                    </label>
+                </div>
+                <div class="camp">
+                    <label for="estado">
+                        Estado:
+                        <select name="estado" id="state" required></select>
+                    </label>
+                </div>
+                <div class="camp">
+                    <label for="house">
+                        Casa:
+                        <input type="radio" name="escolha" id="house" required/>
+                    </label>
+                    <label for="ap">
+                        Apartamento:
+                        <input type="radio" name="escolha" id="ap" required/>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ultimo emprego</legend>
+                <div class="camp">
+                    <label for="resume">Resumo do curriculo:</label>
+                    <textarea cols="50" rows="8" maxlength="1000" required autofocus id="resume">Um curriculo incrivel</textarea>
+                </div>
+                <div class="camp">
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" name="texto" id="cargo" required maxlength="40"/>
+                </div>
+                <div class="camp">
+                    <label for="desc">Descricao cargo:</label>
+                    <input type="text" name="texto" id="desc" required maxlength="500"/>
+                </div>
+                <div class="camp">
+                    <label for="inicio">Data inicio:</label>
+                    <input type="date" name="data" id="inicio" required maxlength="500"/>
+                </div>
+            </fieldset>
+            <button type="submit" id="btn-enviar">Enviar</button>
+        </form>
+        <div id="infos">
+
+        </div>
+        <script src="script.js"></script>
+    </main>  
+</body>
+</html>

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 10px;
+    text-align: center;
+}
+
+main {
+
+    margin: 30px;
+    padding: 20px;
+}
+
+input {
+
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 250px;
+}
+
+p{
+    margin-top: 20px;
+}
