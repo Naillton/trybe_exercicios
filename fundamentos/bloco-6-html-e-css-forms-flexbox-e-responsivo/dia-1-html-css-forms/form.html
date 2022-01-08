@@ -48,11 +48,11 @@
                 <div class="camp">
                     <label for="house">
                         Casa:
-                        <input type="radio" name="escolha" id="house" required/>
+                        <input type="radio" name="escolha" value="casa" id="house"/>
                     </label>
                     <label for="ap">
                         Apartamento:
-                        <input type="radio" name="escolha" id="ap" required/>
+                        <input type="radio" name="escolha" value="apartamento" id="ap"/>
                     </label>
                 </div>
             </fieldset>
@@ -60,7 +60,7 @@
                 <legend>Ultimo emprego</legend>
                 <div class="camp">
                     <label for="resume">Resumo do curriculo:</label>
-                    <textarea cols="50" rows="8" maxlength="1000" required autofocus id="resume">Um curriculo incrivel</textarea>
+                    <textarea cols="50" rows="8" maxlength="1000" required autofocus id="resume" placeholder="Um curriculo incrivel"></textarea>
                 </div>
                 <div class="camp">
                     <label for="cargo">Cargo:</label>
@@ -76,6 +76,7 @@
                 </div>
             </fieldset>
             <button type="submit" id="btn-enviar">Enviar</button>
+            <button type="reset" id="btn-limp">Limpar</button>
         </form>
         <div id="infos">
 
