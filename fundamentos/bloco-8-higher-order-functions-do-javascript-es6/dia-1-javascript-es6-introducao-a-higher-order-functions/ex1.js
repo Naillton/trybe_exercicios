@@ -1,7 +1,7 @@
 const funcObj = (nome) => {
     const obj = {
-        nomeCompleto: `${nome}`,
-        email: `${nome}@trybe.com`,
+        nomeCompleto: nome,
+        email: `${nome.replace(" ", "").toLowerCase()}@trybe.com`,
     }
     return obj;
 };
