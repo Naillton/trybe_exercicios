@@ -15,21 +15,13 @@
   <button id='button'>Somar</button>
   <p id='result'></p>
   <script>
-    function sum() {
-        try {
-        const value1 = document.getElementById('value1').value;
-        const value2 = document.getElementById('value2').value;
-        const result = parseInt(value1) + parseInt(value2);
-        if(isNaN(result) == true){
-            throw new Error('nao foram passados nenhum parametro');
-        }
-        document.getElementById('result').innerHTML = `Resultado: ${result}`;
-        } catch (e) {
-        document.getElementById('result').innerHTML = `Resultado: ${e.message}`;
-      } finally {
-        document.getElementById('value1').value = '';
-        document.getElementById('value2').value = '';
-      }
+      function sum() {
+      const value1 = document.getElementById('value1').value;
+      const value2 = document.getElementById('value2').value;
+      const result = parseInt(value1) + parseInt(value2);
+      document.getElementById('result').innerHTML = `Resultado: ${result}`;
+      document.getElementById('value1').value = '';
+      document.getElementById('value2').value = '';
     }
     window.onload = () => {
       const button = document.getElementById('button');
