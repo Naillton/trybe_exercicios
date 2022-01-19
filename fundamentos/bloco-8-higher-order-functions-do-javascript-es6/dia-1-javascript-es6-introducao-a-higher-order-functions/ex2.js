@@ -1,9 +1,12 @@
-const result = (number) => {
-    aleatorio = Math.floor(Math.random() * 6);
-    if( number !== aleatorio) {
-        return 'Tente novamente!!';
+const result = (number, alet) => {
+    function alet() {
+        let aleatorio = Math.floor(Math.random() * 6);
+        return aleatorio
     }
-    return 'Parabens voce ganhou!!';
+    if( number !== alet()) {
+        return `${number} = ${alet()} Tente novamente!!;`
+    }
+    return `${number} = ${alet()} Parabens voce ganhou!!`;
 };
 
 console.log(result(4));
