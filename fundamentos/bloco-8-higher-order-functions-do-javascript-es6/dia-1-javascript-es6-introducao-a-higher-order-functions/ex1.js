@@ -6,7 +6,7 @@ const funcObj = (nome) => {
     return obj;
 };
 
-const newEmployees = (funcObj) => {
+const newEmployees = () => {
     const employees = {
       id1: funcObj('Pedro Guerra'), // Nome: Pedro Guerra -> Chame sua função passando o nome Pedro Guerra como parâmetro, substituindo as aspas
       id2: funcObj('Luiza Drumond'), // Nome: Luiza Drumond -> Chame sua função passando o nome Luiza Drumond como parâmetro, substituindo as aspas
