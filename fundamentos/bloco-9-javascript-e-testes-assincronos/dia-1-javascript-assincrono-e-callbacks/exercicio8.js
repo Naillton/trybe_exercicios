@@ -38,7 +38,9 @@ getPokemonDetails('Chimchar', (err, message) => {
 
 module.exports = {
   getPokemonDetails,
-}; */
+}; 
+  mentoria roberval
+*/
 
 const pokemons = [
   {
@@ -62,11 +64,6 @@ function pokName(param) {
   return pokemons.find((pokemon) => pokemon.name === param);
 }
 
-function mess(err, message) {
-  if (err) return console.log(err);
-  return console.log(message);
-}
-
 function getPokemonDetails(filter, callback) {
   setTimeout(() => {
     if (filter === undefined) {
@@ -81,11 +78,6 @@ function getPokemonDetails(filter, callback) {
     callback(null, messageFromProfOak);
   }, 2000);
 }
-
-getPokemonDetails(pokName('Charmander'),  (err, message) => {
-  if (err) return console.log(err);
-  return console.log(message);
-});
 
 module.exports = {
   getPokemonDetails,

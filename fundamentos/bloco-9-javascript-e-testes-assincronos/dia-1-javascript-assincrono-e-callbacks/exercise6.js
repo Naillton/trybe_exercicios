@@ -18,24 +18,24 @@ const handleError = (errorReason) =>
 
 // definição da função sendMarsTemperature...
 const sendMarsTemperature = (callback, handleError) => {
-    const marsTemp = getMarsTemperature();
-    const tempF = toFahrenheit(marsTemp);
-    setTimeout (() => {
-        if (callback === temperatureInFahrenheit) {
-            try {
-                return callback(tempF.toFixed(2));
-            } catch (error) {
-                return handleError('robot is busy')
-            }
-        }
-        if (callback === greet) {
-            try {
-                return callback(marsTemp.toFixed(2));
-            } catch (erro) {
-                return handleError('robot is busy')
-            }
-        }
-    },messageDelay());
+  const marsTemp = getMarsTemperature();
+  const tempF = toFahrenheit(marsTemp);
+  setTimeout (() => {
+    if (callback === temperatureInFahrenheit) {
+      try {
+        return callback(tempF.toFixed(2));
+      } catch (error) {
+        return handleError('robot is busy')
+      }
+    }
+    if (callback === greet) {
+      try {
+        return callback(marsTemp.toFixed(2));
+      } catch (erro) {
+        return handleError('robot is busy')
+      }
+    }
+  },messageDelay());
 }
 
 // imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
